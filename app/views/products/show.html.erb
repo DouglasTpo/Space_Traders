@@ -38,7 +38,7 @@
     </ul>
 
     <h2 class="text-neon">Price: <span class="price"> <%= number_to_currency(@product.price, unit: "BTC ") %></span></h2>
-    <%= link_to "Buy Now", add_to_cart_path(@product), method: :post, class: "btn btn-buy mt-3" %>
+    <%= button_to "Buy Now", add_to_cart_path(@product), method: :post, class: "btn btn-buy me-2" %>
 
      <% if current_user == @product.user %>
       <div class="mt-3 d-flex justify-content-start gap-2">
