@@ -1,7 +1,7 @@
 require "test_helper"
 
 class UserTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  # Testes de Associação
+  should have_many(:products).dependent(:destroy)
+  should have_many(:orders).dependent(:destroy)
 end
